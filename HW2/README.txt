@@ -1,3 +1,6 @@
+INSTRUCTIONS: https://cs.brynmawr.edu/Courses/cs245/fall2022/HWS/hw2.html
+=============
+
 NAME:
 =====
 	Leo T. Costa
