@@ -34,24 +34,3 @@ From part 1: Explain your answer to "Are the original and the copy equal?" As a 
 
 From part 2: Consider the original slice and the slice with the first 5 items. Are the items in position 1 of the two slices equal (the answer should be yes)? If you change the value of a field in the struct in position 1 of the original slice, is it still equal to the item in position 1 of the second slice? Explain why the answer to this question makes sense with respect to your answer to the first question.
     The first item in the original slice and in subSlice1 are indeed equal. However, in changing the value of a field in the struct in the first position of the original slice, the value of a field in the struct in the first position of the subslice also changes. While it is often appropriate to assume pass-by-value in Go, a slice in Go is actually an abstraction that uses arrays but makes them more versatile and useful. A slice references an underlying array, and thus when the copy is made, a copy of a reference is made, which ultimately means both names then still reference the same array. The blog post here (https://go.dev/blog/slices-intro) was helpful in clarifying this distinction for me.
-
-
-I Worked With:
-==============
-    N/A
-
-Approximate Hours worked:
-=========================
-    This is really hard to judge because I kind of lose track of time when I code and I also get distracted on Stack Overflow rabbit holes or snack breaks... That being said, maybe 5? That's really a shot in the dark. I will try to keep better track next time.
-
-Special Instructions to the grader:
-===================================
-    N/A
-
-Known Bugs or Limitations:
-==========================
-    None to my knowledge.
-
-Other comments:
-===============
-    None.
