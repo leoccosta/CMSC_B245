@@ -1,12 +1,6 @@
 # https://cs.brynmawr.edu/Courses/cs245/fall2022/HWS/hw4a.html
 # Almost totally missing from the Enum package are functions that are dependent on position in the list. So write two.
 
-# map_index
-# similar to Enum.map
-# It takes two arguments: a list and a function.
-# Unlike map, the input function should take two parameters: a value from the list and the index of the index of the item in the list.
-# Here is an example of the usage of map_index
-
 defmodule EnumIndex do
     @moduledoc """
     This module creates functions missing from the Enum package that are dependent on position in the list.

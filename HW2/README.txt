@@ -1,5 +1,8 @@
-INSTRUCTIONS: https://cs.brynmawr.edu/Courses/cs245/fall2022/HWS/hw2.html
-=============
+ASSIGNMENT: 
+===========
+    Homework 2 – Go: Strucs & Slices
+    For assignment details: https://cs.brynmawr.edu/Courses/cs245/fall2022/HWS/hw2.html
+
 
 NAME:
 =====
@@ -7,13 +10,11 @@ NAME:
 
 Programs Files:
 ===============
-    Part 1:
+    Part 1: Structs
         Part1.go (in directory Part1_go)
-        not sure if go.mod (initialized using "go mod init aaa" in Terminal) is a program file
 
-    Part 2:
+    Part 2: Slices
         Part2.go (in directory Part2_go)
-        again, not sure if go.mod (initialized using "go mod init aaa" in Terminal) is a program file
 	
 How to Compile:
 ===============
