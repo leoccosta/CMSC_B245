@@ -1,16 +1,21 @@
+DESCRIPTION: 
+============
+    Homework 4 – Elixir Programs 
+    For assignment details: https://cs.brynmawr.edu/Courses/cs245/fall2022/HWS/hw4a.html
+
 NAME:
 =====
 	Leo T. Costa
 
 Programs Files:
 ===============
-    Part 1:
+    Part 1: Flattens lists of unlimited depth
         Part1.ex
-	Part 2:
+	Part 2: Taking input and making a list of structs
         Part2.ex
-    Part 3:
+    Part 3: Using the Enum package to apply fns and filters to lists
         Part3.ex
-    Part 4:
+    Part 4: Expanding on the Enum package to consider indices
         Part4.ex
 
 How to Compile:
@@ -42,7 +47,6 @@ I wonder if it has something to do with it being easy enough to do with the exis
 
 Question 3: From the deduplication of Students. The approach I suggested involving sorting. So it is, at best, O(n lg n). A different approach would be heave everything into a map (i.e., ideally this would be a hashtable rather than a true basic map) with keys being ID numbers. Then since maps do not allow duplicate keys, all you need to do is read the map at the end to get the de-duplicated list. This procedure works well in imperative programming (it is O(n)). Does it work as well in Elixir? Explain.
 I would love for you to explain this in class since I took data structures (the last CS course I took) over 2 years ago. Sorry for not reading the questions ahead – I would've asked you in office hours. To me it seems like heaving everything on to a map seems not that efficient given that you'd still have to search through the whole list to see if a value is already there?
-
 
 I Worked With:
 ==============
