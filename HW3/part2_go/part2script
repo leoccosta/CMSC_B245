@@ -1,0 +1,16 @@
+Script started on 2022-10-21 14:46:38-04:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="150" LINES="15"]
+lcosta@comet:~/CS245/HW3/part2_go$ go run part.[K2.go
+Incrementor 3: 0
+Incrementor -7: 0
+Incrementor 3: 3
+Incrementor -7: -7
+Incrementor 3: 6
+Incrementor -7: -14
+Incrementor 3: 9
+Incrementor -7: -21
+Incrementor 3: 12
+Incrementor -7: -28
+lcosta@comet:~/CS245/HW3/part2_go$ g[Kexit
+exit
+
+Script done on 2022-10-21 14:46:52-04:00 [COMMAND_EXIT_CODE="0"]

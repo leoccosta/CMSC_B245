@@ -1,0 +1,63 @@
+NAME:
+=====
+	Leo T. Costa
+
+Programs Files:
+===============
+    Part 1:
+        Part1.go (in directory Part1_go)
+        not sure if go.mod (initialized using "go mod init aaa" in Terminal) is a program file
+
+    Part 2:
+        Part2.go (in directory Part2_go)
+        again, not sure if go.mod (initialized using "go mod init aaa" in Terminal) is a program file
+	
+How to Compile:
+===============
+    Part 1:
+       go run Part1.go
+    Part 2:
+       go run Part2.go
+    Part 3:
+       go run Part3.go
+       
+How to Run:
+===========
+    "go run [filename]" both compiles and runs
+	
+Reflection:
+===========
+It was really nice to realize that I feel like I've developed a grasp of Go and its quirks. In the beginning of learning about Go, it felt very intimidating, but this assignment was fun and I'm actually going to miss it... Elixir, here we come, I guess!!
+
+Part 3 – Questions:
+===========
+PART 1: This program proves that Go uses static scoping. Since Go is dynamically scoped, a() only has access to a variable if it is globally defined or passed in as a parameter. This is shown by the fact that the first execution of a() is not able to print a value for y. If Go were dynamically scoped, y would have the value of the last value assigned to the name y. However, even though y is defined in the scope I called "scope 1", a() does not have access to it. 
+
+PART 2: In my main() function, I printed every increment and alternated between the use of two incrementors. If the incrementors interacted, either their internal count would be affected by calling the other or their internal increment step would. Neither of these were the case, as evidenced by the printed outputs of the function. I do not totally understand what you mean by an unbounded number of incrementors – if you mean having as many incrementors as you want going at once or as many possible kinds of increments as there are valid int parameters. If the former, there is as many as memory would allow, but given that they do not interact, there is no reason that 10000 would interact but 2 would not because each incrementor has its own variables due to scope. Perhaps a more concrete proof using induction (proving it works for x incrementors and x+1 incrementors) could be made. If the latter, the incrementor can take anything that is a valid input, so any integer, not just the two I inputted. 
+
+PART 3:
+Compared to the range command, my iterator is more explicit about collecting error, which is a pro, which is traded for not returning index (which can be a con but can also be easily kept track of, in my opinion). Once the iterator goes through the entire slice, it is expended, as the error condition has already been met. This can be a con in terms of memory usage without a garbage collector if you're making many of them. However, this means you can keep track of your place in the iteration (say, if you wanted to pause in the middle and finish later) or to know that you already iterated through a particular slice. A limitation compared to range is that it only works on one kind of slice ([]int). I don't consider it universally superior or inferior – they each could have situations they lend themselves towards.
+
+When I change the contents of the slice that the iterator works on, the iterator prints out the new value that was changed to. This is because a slice contains a pointer to an array, so that even though this is pass by value (the value being the pointer), it in effect has a reference-like relationship to the array and thus when the slice (and thus underlying array) changes, the iterator has access to this change. 
+
+In contrast, after appending any items to the slice, the iterator does not print out the appended items. This is because Go is pass by value, and when a slice is passed as a parameter, the value for the length is copied. Thus, it does not update if the slice updates its length. Thus, the error for the iterator is based on the index being read being within the original length of the slice, not any updates.
+
+I Worked With:
+==============
+    Ed Shin
+
+Approximate Hours worked:
+=========================
+    5 hours
+
+Special Instructions to the grader:
+===================================
+    N/A
+
+Known Bugs or Limitations:
+==========================
+    None to my knowledge.
+
+Other comments:
+===============
+    None.
