@@ -2,7 +2,6 @@
 * Prints the numbers 1-100, except:
 * if the number is divisible by 3 print "Fizz"
 * if the number is divisible by 5 print "Buzz"
-* [forgot this last condition:] if the number is divisible by 3 and 5 print "FizzBuzz."
 * @author lcosta
 * created: September 14, 2022
  */
