@@ -1,0 +1,65 @@
+NAME:
+=====
+	Leo T. Costa
+
+Programs Files:
+===============
+    Part 1:
+        Part1.ex
+	Part 2:
+        Part2.ex
+    Part 3:
+        Part3.ex
+    Part 4:
+        Part4.ex
+
+How to Compile:
+===============
+    Part 1:
+       elixir Part1.ex
+    Part 2:
+       elixir Part2.ex
+    Part 3:
+       elixir Part3.ex
+    Part 4:
+       elixir Part4.ex
+       
+How to Run:
+===========
+    "elixir [filename]" both compiles and runs
+	
+Reflection:
+===========
+Like with Go, I've found the homeworks (and labs, just generally writing code) to be the best way to understand a language best. I started off very confused (especially with part 1) and encountered a hiccup with part 4 (which ended up being a syntax modification of one character... classic) but now feel pretty good about everything that was asked of me, which once seemed so intimidating. It's funny because it's almost hard to switch back into Go now and have variables be mutable, etc. I appreciate the comparison and think being able to flip between the two languages is really useful for my learning.
+
+Part 3 – Questions:
+===========
+Question 1: In part 1, I commented that the tail recursive version of the program was painful (to write). What about this problem makes tail recursion painful? (Hint, using tail recursion to search a binary tree is painful for the same reason.) Explain.
+Basically, it doesn't really make sense to use tail recursion because we want to recur on both the head and the tail. We have to merge the results of recurring each part (like sides of a binary tree) and if you have to merge the results then it's not possible tail recursively.
+
+Question 2: Why do you think that the Enum package not have functions to do things on the basis of indices? (Speculate, I do not think there is a "correct" answer.)
+I wonder if it has something to do with it being easy enough to do with the existing functions in Enum – after all, it only took 2-3 lines with pipes and increased my familiarity with the package. It's also a fairly big package, so it might get confusing to also add an index based version for so many of its functions. It might also be that functional programming doesn't lend itself to thinking about indices (since favoring adding to a list at the front would mean basically changing every index at every addition) so not giving this functioanlity encourages programmers to think more creatively (or perhaps just less imperatively) about lists.
+
+Question 3: From the deduplication of Students. The approach I suggested involving sorting. So it is, at best, O(n lg n). A different approach would be heave everything into a map (i.e., ideally this would be a hashtable rather than a true basic map) with keys being ID numbers. Then since maps do not allow duplicate keys, all you need to do is read the map at the end to get the de-duplicated list. This procedure works well in imperative programming (it is O(n)). Does it work as well in Elixir? Explain.
+I would love for you to explain this in class since I took data structures (the last CS course I took) over 2 years ago. Sorry for not reading the questions ahead – I would've asked you in office hours. To me it seems like heaving everything on to a map seems not that efficient given that you'd still have to search through the whole list to see if a value is already there?
+
+
+I Worked With:
+==============
+    Ed Shin
+
+Approximate Hours worked:
+=========================
+    6/7+ hours (?)
+
+Special Instructions to the grader:
+===================================
+    N/A
+
+Known Bugs or Limitations:
+==========================
+    None to my knowledge.
+
+Other comments:
+===============
+    None.
